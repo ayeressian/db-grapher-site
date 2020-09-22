@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("./asset/fonts/RobotoCondensed-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("./asset/fonts/RobotoCondensed-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-display: swap;
+}
+
+* {
+  font-family: RobotoCondensed, Arial;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+  padding: 5px;
+}
+
+.logo-container {
+  background-color: #e2ebed;
+  position: fixed;
+  top: 0;
+  width: inherit;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 100%;
+}
+.github {
+  margin-top: 5px;
+  margin-right: 5px;
+  height: calc(100% - 10px);
+}
+
+section {
+  margin-top: 30px;
+}
+
+.app-section {
+  margin: 10px;
+  margin-top: 150px;
+}
+
+section h1 {
+  font-weight: normal;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.app-section img {
+  max-width: 100%;
+}
+
+.try-now-btn-container {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #666666;
+  font-size: 24px;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+.button:hover {
+  background-color: #f6f6f6;
+}
+.button:active {
+  position: relative;
+  top: 1px;
+}
+
+section .imgs-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+section .imgs-container img {
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 70px;
+}
+
+.cloud-integration-section {
+  margin-top: 70px;
+}
+
+.cloud-integration-section .imgs-container {
+  margin-top: 20px;
+}
