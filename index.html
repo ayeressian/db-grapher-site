@@ -13,19 +13,26 @@
   <link rel="preload" href="/asset/fonts/RobotoCondensed-Bold.ttf" as="font" type="font/ttf" crossorigin>
 
   <title>DB Grapher</title>
+
+  <script src="lib/siema.min.js"></script>
 </head>
 
 <body>
   <div class="container">
     <div class="logo-container">
-      <img src="asset/logo-app.svg" class="logo" alt="Github" />
-      <a class="github-link" href="https://github.com/ayeressian/dbgrapher"><img src="asset/github.svg"
+      <img src="asset/logo-app.png" class="logo" alt="DB Grapher" />
+      <a class="github-link" href="https://github.com/ayeressian/dbgrapher"><img src="asset/github.svg" alt="Github"
           class="github" /></a>
     </div>
 
     <section class="app-section">
       <h1>A free and open source online relational database schema designer.</h1>
-      <img src="asset/app-sample.png" />
+      <div class="siema">
+        <img src="asset/app-sample.png" />
+        <img src="asset/app-sample.png" />
+        <img src="asset/app-sample.png" />
+        <img src="asset/app-sample.png" />
+      </div>
       <div class="try-now-btn-container">
         <a href="https://dbgrapher.com" class="try-now-btn button">Try It Now</a>
       </div>
@@ -69,6 +76,13 @@
       </div>
     </section>
   </div>
+
+  <script>
+    const carousel = new Siema({
+      loop: true
+    });
+    setInterval(() => carousel.next(), 2000);
+  </script>
 </body>
 
 </html>
