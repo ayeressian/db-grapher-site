@@ -1,0 +1,20 @@
+name: CD
+
+on:
+  create:
+    tags:
+      - v*
+
+jobs:
+  cd:
+    runs-on: ubuntu-latest
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      - name: Deploy to BunnyCDN
+        uses: ayeressian/bunnycdn-storage-deploy@master
+        with:
+          source: "."
+          storageZoneName: "site-dbgrapher"
+          accessKey: "${{ secrets.BUNNY_CDN_STORAGE_KEY }}"
