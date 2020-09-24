@@ -28,10 +28,14 @@
     <section class="app-section">
       <h1>A free and open source online relational database schema designer.</h1>
       <div class="siema">
-        <img src="asset/app-sample.png" />
-        <img src="asset/app-sample.png" />
-        <img src="asset/app-sample.png" />
-        <img src="asset/app-sample.png" />
+        <img src="asset/app-screenshots/1.jpeg" />
+        <img src="asset/app-screenshots/2.jpeg" />
+        <img src="asset/app-screenshots/3.jpeg" />
+        <img src="asset/app-screenshots/4.jpeg" />
+      </div>
+      <div class="arrows">
+        <img src="asset/left.svg" alt="left" id="left" />
+        <img src="asset/right.svg" alt="right" id="right" />
       </div>
       <div class="try-now-btn-container">
         <a href="https://dbgrapher.com" class="try-now-btn button">Try It Now</a>
@@ -79,9 +83,19 @@
 
   <script>
     const carousel = new Siema({
-      loop: true
+      duration: 700,
+      loop: true,
     });
-    setInterval(() => carousel.next(), 5000);
+    const tick = setInterval(() => carousel.next(), 5000);
+    document.querySelector('#left').addEventListener('click', () => {
+      carousel.next();
+      clearInterval(tick);
+    });
+
+    document.querySelector('#right').addEventListener('click', () => {
+      carousel.prev();
+      clearInterval(tick);
+    });
   </script>
 </body>
 

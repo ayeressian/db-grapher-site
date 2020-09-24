@@ -125,6 +125,11 @@ section h1 {
   max-width: 100%;
 }
 
+.app-section .arrows {
+  width: 100%;
+  text-align: center;
+}
+
 .db-list-section {
   background-color: #f7f7f7;
 }
