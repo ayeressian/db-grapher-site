@@ -68,9 +68,9 @@ section .imgs-container {
 }
 
 section .imgs-container img {
-  padding-right: 15px;
-  padding-left: 15px;
-  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 70px;
   height: 70px;
 }
 
@@ -112,6 +112,10 @@ section h1 {
 .app-section {
   margin: 10px;
   padding-top: 100px;
+}
+
+.app-section h1 {
+  padding-bottom: 20px;
 }
 
 .app-section img {
