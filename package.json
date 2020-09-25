@@ -23,9 +23,14 @@
   },
   "homepage": "https://github.com/ayeressian/db-grapher-site#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-copy": "^1.0.2"
   },
   "dependencies": {
     "siema": "^1.5.1"
+  },
+  "staticPath": {
+    "source": "/src/privacy-policy.txt",
+    "target": "/dist/privacy-policy.txt"
   }
 }
