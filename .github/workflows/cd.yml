@@ -11,10 +11,11 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
+      - run: npm i
+      - run: npm run build
       - name: Deploy to BunnyCDN
         uses: ayeressian/bunnycdn-storage-deploy@master
         with:
-          source: "."
+          source: "dist"
           storageZoneName: "site-dbgrapher"
           accessKey: "${{ secrets.BUNNY_CDN_STORAGE_KEY }}"

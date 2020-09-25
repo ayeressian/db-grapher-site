@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"
     content="An application for designing relational database schemas. It's open source under MIT licence.">
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="./style.css">
 
   <link rel="icon" href="./asset/icon-app-64px.png" type="image/x-icon">
   <link rel="preload" href="/asset/fonts/RobotoCondensed-Regular.ttf" as="font" type="font/ttf" crossorigin>
@@ -14,7 +14,7 @@
 
   <title>DB Grapher</title>
 
-  <script src="lib/siema.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -81,22 +81,7 @@
     </section>
   </div>
 
-  <script>
-    const carousel = new Siema({
-      duration: 700,
-      loop: true,
-    });
-    const tick = setInterval(() => carousel.next(), 5000);
-    document.querySelector('#left').addEventListener('click', () => {
-      carousel.next();
-      clearInterval(tick);
-    });
-
-    document.querySelector('#right').addEventListener('click', () => {
-      carousel.prev();
-      clearInterval(tick);
-    });
-  </script>
+  <script src="./main.js"></script>
 </body>
 
 </html>
