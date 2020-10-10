@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel src/index.html",
+    "start": "parcel src/*.html",
     "build": "parcel build src/index.html"
   },
   "repository": {
@@ -23,14 +23,9 @@
   },
   "homepage": "https://github.com/ayeressian/db-grapher-site#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.4",
-    "parcel-plugin-copy": "^1.0.2"
+    "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
     "siema": "^1.5.1"
-  },
-  "staticPath": {
-    "source": "/src/privacy-policy.txt",
-    "target": "/dist/privacy-policy.txt"
   }
 }
